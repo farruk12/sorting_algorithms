@@ -3,7 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdbool.h>
+#include <stddef.h>
+#include <string.h>
+#include <unistd.h>
+#include <ctype.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -18,12 +22,8 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
-
-/*Printing helper functions */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-
-/*Regular functions prototypes*/
 void bubble_sort(int *array, size_t size);
 
 #endif
